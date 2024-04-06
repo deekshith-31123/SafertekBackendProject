@@ -19,12 +19,22 @@ def create_file(request):
     with open(save_path, 'w') as file:
         file.write(content)
 
-    return JsonResponse({"message": "File created successfully"}, status=200)
+    # return JsonResponse({"message": "File created successfully"}, status=200)
+    return redirect('get_files')
 
+
+
+# def get_files(request):
+#     file_list = os.listdir('media')
+#     return JsonResponse({"files": file_list}, status=200)
 
 def get_files(request):
-    file_list = os.listdir('media')
-    return JsonResponse({"files": file_list}, status=200)
+    media_dir = 'media'
+    if not os.path.exists(media_dir):
+        return render(request, 'files_list.html', {'files': []})  # Empty file list
+
+    file_list = os.listdir(media_dir)
+    return render(request, 'files_list.html', {'files': file_list})
 
 
 def get_file(request, filename):
@@ -72,7 +82,22 @@ def delete_file(request, filename):
         return HttpResponseBadRequest("File not found")
 
     os.remove(file_path)
-    return JsonResponse({"message": "File deleted successfully"}, status=200)
+    return redirect('get_files')
+    # return JsonResponse({"message": "File deleted successfully"}, status=200)
+
+def home(request):
+    return render(request, 'home.html')
+
+def download_file(request, filename):
+    file_path = os.path.join('media', filename)
+    if not os.path.exists(file_path):
+        return HttpResponse("File not found", status=404)
+
+    # Open the file and prepare the response for download
+    with open(file_path, 'rb') as file:
+        response = HttpResponse(file.read(), content_type='application/octet-stream')
+        response['Content-Disposition'] = f'attachment; filename="{filename}"'
+        return response
 
 
 

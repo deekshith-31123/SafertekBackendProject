@@ -23,13 +23,15 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload/', views.upload_file, name='upload_file'),
-
+    path('', views.home, name='home'),
     path('createFile/', views.create_file, name='create_file'),
     path('getFiles/', views.get_files, name='get_files'),
     path('getFile/<str:filename>/', views.get_file, name='get_file'),
     path('modify_file/<str:filename>/', views.modify_file_view, name='modify_file'),
+
     path('file_modified/', views.file_modified, name='file_modified'),
     path('delete_file/<str:filename>/', views.delete_file, name='delete_file'),
+    path('download_file/<str:filename>/', views.download_file, name='download_file'),
 ]
 if settings.DEBUG:
         urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
