@@ -52,6 +52,8 @@ This Django project provides functionalities for file management, including crea
 ## Output Screenshots
 ![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/dd6752a0-e006-4a73-a308-6e4fef6cffa5)
 ![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/d08c0455-6e86-43a1-955d-691e20b474f1)
+![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/7a91f540-5653-4294-93cc-52345a5dcd06)
 ![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/0b614067-34b3-425d-96c7-e8457e0be8c7)
 ![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/aa1496dc-6c7b-4c98-98e0-0ecb1e2d947e)
 ![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/3db1f2e1-8217-4077-af76-9f30a14ff47b)
+
