@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Example HTML form for file upload -->
+<form method="POST" action="{% url 'create_file' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="filename" placeholder="Enter filename">
+    <textarea name="content" placeholder="Enter file content"></textarea>
+    <button type="submit">Upload File</button>
+</form>
+
+</body>
+</html>

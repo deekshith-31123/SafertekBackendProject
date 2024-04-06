@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify File</title>
+</head>
+<body>
+    <h1>Modify File: {{ filename }}</h1>
+    <form action="{% url 'modify_file' filename=filename %}" method="POST">
+        {% csrf_token %}
+        <label for="new_content">New Content:</label><br>
+        <textarea id="new_content" name="new_content" rows="5" cols="40">{{ file_content }}</textarea><br>
+        <input type="submit" value="Modify File">
+    </form>
+</body>
+</html>
