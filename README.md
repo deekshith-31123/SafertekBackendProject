@@ -1,4 +1,6 @@
-# Django File Management Project
+# Safertek Backend Exam (File Management System)
+
+
 
 This Django project provides functionalities for file management, including creating, modifying, deleting, and retrieving files.
 
@@ -46,3 +48,10 @@ This Django project provides functionalities for file management, including crea
 4. View Files:
    - Use the endpoint http://localhost:8080/get_files/ to get a list of available files.
    - Use the endpoint http://localhost:8080/get_file/<filename>/ to view the content of a specific file.
+  
+## Output Screenshots
+![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/dd6752a0-e006-4a73-a308-6e4fef6cffa5)
+![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/d08c0455-6e86-43a1-955d-691e20b474f1)
+![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/0b614067-34b3-425d-96c7-e8457e0be8c7)
+![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/aa1496dc-6c7b-4c98-98e0-0ecb1e2d947e)
+![image](https://github.com/MANIKANTA-POTNURU/BackendDjangoWorkingOnFiles/assets/110116617/3db1f2e1-8217-4077-af76-9f30a14ff47b)
