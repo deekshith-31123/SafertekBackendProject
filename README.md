@@ -18,7 +18,7 @@ This Django project provides functionalities for file management, including crea
       python manage.py runserver
    
 
-4. Access the application in your web browser at http://localhost:8000/.
+4. Access the application in your web browser at http://localhost:8080/.
 
 ## Project Structure
 
@@ -33,16 +33,16 @@ This Django project provides functionalities for file management, including crea
 ## Usage
 
 1. Upload a File:
-   - Access the upload file form at http://localhost:8000/upload_file/.
+   - Access the upload file form at http://localhost:8080/upload_file/.
    - Provide a filename and content to upload a new file.
 
 2. Modify a File:
-   - Access the modify file form at http://localhost:8000/modify_file/<filename>/.
+   - Access the modify file form at http://localhost:8080/modify_file/<filename>/.
    - Enter new content and submit to modify an existing file.
 
 3. Delete a File:
-   - Use the endpoint http://localhost:8000/delete_file/<filename>/ to delete a file.
+   - Use the endpoint http://localhost:8080/delete_file/<filename>/ to delete a file.
 
 4. View Files:
-   - Use the endpoint http://localhost:8000/get_files/ to get a list of available files.
-   - Use the endpoint http://localhost:8000/get_file/<filename>/ to view the content of a specific file.
+   - Use the endpoint http://localhost:8080/get_files/ to get a list of available files.
+   - Use the endpoint http://localhost:8080/get_file/<filename>/ to view the content of a specific file.
